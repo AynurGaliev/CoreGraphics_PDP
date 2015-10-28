@@ -16,9 +16,8 @@ class ReplicatorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.reflectedImageView = ReflectedImageView.createView()
-        self.reflectedImageView.frame = CGRectMake(20, 200, self.view.bounds.size.width - 40, 170)
+        self.reflectedImageView.frame = CGRectMake(20, 240, self.view.bounds.size.width - 40, 140)
         self.view.addSubview(self.reflectedImageView)
-        // Do any additional setup after loading the view.
     }
 
 }

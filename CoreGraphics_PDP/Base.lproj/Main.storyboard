@@ -163,8 +163,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quf-ve-7Kx" customClass="ReplicatorButton" customModule="CoreGraphics_PDP" customModuleProvider="target">
-                                <rect key="frame" x="225" y="40" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quf-ve-7Kx" customClass="ReplicatorButton" customModule="CoreGraphics_PDP" customModuleProvider="target">
+                                <rect key="frame" x="225" y="84" width="150" height="150"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="Wgn-oC-lCJ"/>
@@ -201,12 +201,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qQw-rc-c45" customClass="LayerView" customModule="CoreGraphics_PDP" customModuleProvider="target">
-                                <rect key="frame" x="20" y="60" width="200" height="200"/>
+                                <rect key="frame" x="20" y="115" width="150" height="150"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.965748206" green="1" blue="0.11423422" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUD-8a-B36">
-                                <rect key="frame" x="20" y="530" width="92" height="30"/>
+                                <rect key="frame" x="20" y="477" width="92" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Change color"/>
                                 <connections>
@@ -221,25 +221,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6FZ-sU-WAw">
-                                <rect key="frame" x="20" y="310" width="200" height="200"/>
+                                <rect key="frame" x="20" y="310" width="150" height="150"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.34901960780000002" green="0.40784313729999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Кастомный UIView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNB-Rf-5PS">
+                                <rect key="frame" x="20" y="72" width="211" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJG-wK-HgI">
-                                <rect key="frame" x="150" y="530" width="38" height="30"/>
+                                <rect key="frame" x="132" y="477" width="38" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Move"/>
                                 <connections>
                                     <action selector="move:" destination="DZ6-Y0-zs1" eventType="touchUpInside" id="hi8-j1-eqi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Кастомный UIView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNB-Rf-5PS">
-                                <rect key="frame" x="20" y="20" width="205" height="32"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,7 +253,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBJ-Hr-5ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="4664"/>
+            <point key="canvasLocation" x="590" y="4671"/>
         </scene>
         <!--Shape Button View Controller-->
         <scene sceneID="0Jh-3n-1sI">
@@ -368,14 +368,18 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Core Graphics" id="WD3-V5-YDT"/>
                     <connections>
-                        <segue destination="eWM-Ds-Qul" kind="show" identifier="Example1" id="p0c-pW-mxG"/>
-                        <segue destination="Hg2-oh-gCn" kind="show" identifier="Example2" id="YZo-nc-LYp"/>
-                        <segue destination="ifE-Gg-ydP" kind="show" identifier="Example3" id="A2P-Iz-Uz6"/>
-                        <segue destination="DZ6-Y0-zs1" kind="show" identifier="Example4" id="0mG-kv-mku"/>
-                        <segue destination="x7K-KH-5Ns" kind="show" identifier="Example5" id="sBG-af-aEy"/>
-                        <segue destination="hzR-Kf-n2s" kind="show" identifier="Example6" id="toz-jb-xv4"/>
-                        <segue destination="0WW-a1-XbF" kind="show" identifier="Example7" id="BsM-rA-p0h"/>
-                        <segue destination="IiU-g8-DFV" kind="show" identifier="Example8" id="6lV-7w-3Yd"/>
+                        <segue destination="eWM-Ds-Qul" kind="show" identifier="Example0_0" id="p0c-pW-mxG"/>
+                        <segue destination="Hg2-oh-gCn" kind="show" identifier="Example1_0" id="YZo-nc-LYp"/>
+                        <segue destination="ifE-Gg-ydP" kind="show" identifier="Example2_0" id="A2P-Iz-Uz6"/>
+                        <segue destination="DZ6-Y0-zs1" kind="show" identifier="Example3_0" id="0mG-kv-mku"/>
+                        <segue destination="x7K-KH-5Ns" kind="show" identifier="Example4_0" id="sBG-af-aEy"/>
+                        <segue destination="hzR-Kf-n2s" kind="show" identifier="Example5_0" id="toz-jb-xv4"/>
+                        <segue destination="0WW-a1-XbF" kind="show" identifier="Example6_0" id="BsM-rA-p0h"/>
+                        <segue destination="IiU-g8-DFV" kind="show" identifier="Example7_0" id="6lV-7w-3Yd"/>
+                        <segue destination="Top-5c-5vw" kind="show" identifier="Example2_1" id="Uiy-GS-Ial"/>
+                        <segue destination="ERZ-w4-A5V" kind="show" identifier="Example2_2" id="dfz-aH-Jb0"/>
+                        <segue destination="9DA-WV-2am" kind="show" identifier="Example2_3" id="mpf-dr-K4n"/>
+                        <segue destination="Z1I-g1-7XN" kind="show" identifier="Example8_0" id="QMZ-EL-3uQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pal-0L-Gya" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -437,8 +441,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sbd-hG-Wnb">
-                                <rect key="frame" x="0.0" y="20" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sbd-hG-Wnb">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Sbd-hG-Wnb" secondAttribute="height" multiplier="1:1" id="27f-s8-354"/>
@@ -461,10 +465,61 @@
             </objects>
             <point key="canvasLocation" x="600" y="7655"/>
         </scene>
-        <!--Emitter View Controller-->
+        <!--Camomile View Controller-->
+        <scene sceneID="19e-kg-NUD">
+            <objects>
+                <viewController id="Z1I-g1-7XN" customClass="CamomileViewController" customModule="CoreGraphics_PDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fwe-Ic-mmM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aoy-3f-dgh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cxB-OZ-gIE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZ9-Ch-Vr8" customClass="CamomileView" customModule="CoreGraphics_PDP" customModuleProvider="target">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="M8P-aX-ofn"/>
+                                    <constraint firstAttribute="height" constant="200" id="ehB-e6-zuV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="petalColor">
+                                        <color key="value" red="0.965748206" green="1" blue="0.11423422" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="centerColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="petalsCount">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JZ9-Ch-Vr8" firstAttribute="centerY" secondItem="cxB-OZ-gIE" secondAttribute="centerY" id="Fi4-Jg-2ND"/>
+                            <constraint firstItem="JZ9-Ch-Vr8" firstAttribute="centerX" secondItem="cxB-OZ-gIE" secondAttribute="centerX" id="GPB-xk-rhc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camomileView" destination="JZ9-Ch-Vr8" id="OlI-AP-Igm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdb-d4-RhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="8470"/>
+        </scene>
+        <!--Confetti View Controller-->
         <scene sceneID="2dY-DM-GkW">
             <objects>
-                <viewController id="ifE-Gg-ydP" customClass="EmitterViewController" customModule="CoreGraphics_PDP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ifE-Gg-ydP" customClass="ConfettiViewController" customModule="CoreGraphics_PDP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Abm-iS-Jnu"/>
                         <viewControllerLayoutGuide type="bottom" id="zSe-y8-deO"/>
@@ -479,6 +534,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hza-LC-N4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="600" y="3795"/>
+        </scene>
+        <!--Sun Emitter View Controller-->
+        <scene sceneID="x1W-Oa-c1y">
+            <objects>
+                <viewController id="Top-5c-5vw" customClass="SunEmitterViewController" customModule="CoreGraphics_PDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Aol-y9-9Ya"/>
+                        <viewControllerLayoutGuide type="bottom" id="hCh-h0-3gW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lxH-7W-bWO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81Y-Ps-OtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="3806"/>
+        </scene>
+        <!--Sky View Controller-->
+        <scene sceneID="Y6e-Yt-PV2">
+            <objects>
+                <viewController id="9DA-WV-2am" customClass="SkyViewController" customModule="CoreGraphics_PDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tV3-zQ-AiU"/>
+                        <viewControllerLayoutGuide type="bottom" id="j96-Bq-lSA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yn6-5y-tMU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kak-ID-3WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888" y="3806"/>
+        </scene>
+        <!--Fire View Controller-->
+        <scene sceneID="0nK-0I-fv7">
+            <objects>
+                <viewController id="ERZ-w4-A5V" customClass="FireViewController" customModule="CoreGraphics_PDP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a4p-8y-gZz"/>
+                        <viewControllerLayoutGuide type="bottom" id="lAh-sF-jOF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hGp-jL-KvX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jl-0D-rhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120" y="3798"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XX6-Ne-hI7">

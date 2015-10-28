@@ -18,7 +18,6 @@ class MaskViewController: UIViewController {
         
         let image = UIImage(named:"Nature-1.jpg")!
 
-        
         self.firstImageView.image = image.createMaskedImage(UIImage(named: "StarWithoutBackground.png")!, maskRegion: CGRectMake(0, 0, image.size.width, image.size.height))
         self.secondImageView.image = image.createEOMaskedImage(UIImage(named: "StarWithoutBackground.png")!, maskRegion: CGRectMake(0, 0, image.size.width, image.size.height))
 
